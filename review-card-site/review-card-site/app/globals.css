@@ -1,0 +1,85 @@
+:root {
+  --ink: #17140f;
+  --paper: #f6f1e6;
+  --paper-dim: #ede6d4;
+  --line: #d9cfb6;
+  --brass: #a9762c;
+  --sage: #3e6b4f;
+  --sky: #2e5f74;
+  --idle: #8a806b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.screen {
+  max-width: 420px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  padding: 56px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.bizName {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0 0 4px;
+  line-height: 1.25;
+}
+
+.bizSub {
+  font-size: 13px;
+  color: var(--idle);
+  margin: 0 0 32px;
+}
+
+.linkBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1.5px solid var(--line);
+  margin-bottom: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--paper);
+  text-decoration: none;
+}
+
+.linkBtn:hover {
+  background: var(--paper-dim);
+}
+
+.linkBtn.review {
+  border-color: var(--brass);
+}
+.linkBtn.review svg {
+  color: var(--brass);
+}
+.linkBtn.insta svg {
+  color: var(--sky);
+}
+.linkBtn.whatsapp svg {
+  color: var(--sage);
+}
+
+.noLinks {
+  color: var(--idle);
+  font-size: 14px;
+}
